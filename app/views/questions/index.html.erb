@@ -1,0 +1,8 @@
+<p><h5>Question List</h5></p>
+<div class="container pt-3">
+  <% @questions.each do |question| %>
+    <div class="container question-box">
+      <p><%= question.title %></p>
+    </div>
+  <% end %>
+</div>
