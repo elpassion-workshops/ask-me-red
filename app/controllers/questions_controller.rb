@@ -9,9 +9,10 @@ class QuestionsController < ApplicationController
 
   def create
   	@question = current_user.questions.build(question_params)
-  	@question.save
 
-  	 redirect_to question_path(@question)
+  	if @question.save
+  	  redirect_to question_path(@question)
+  	end
   end
 
   def show

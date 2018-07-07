@@ -1,5 +1,6 @@
 <div class="container text-center pt-3">
   Welcome to AskMe!
 </div>
-
-<h3><%= link_to 'Dodaj pytanie', new_question_path %></h3>
+<% if user_signed_in? %>
+	<h3><%= link_to 'Dodaj pytanie', new_question_path %></h3>
+<% end %>
