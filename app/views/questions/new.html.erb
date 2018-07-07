@@ -23,6 +23,11 @@
   </div>
 
   <div>
+    <%= f.label :tag_list, t('.tags') %>
+    <%= f.text_area :tag_list %>
+  </div>
+
+  <div>
     <%= f.submit 'Dodaj pytanie' %>
   </div>
 <% end %>
