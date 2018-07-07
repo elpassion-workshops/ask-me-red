@@ -1,4 +1,11 @@
 <h2><%= @question.title %></h2>
 <p><%= @question.content %></p>
+<p>Tagi:</p>
+<lu>
+<% @question.tag_list.split(',').each do |tag| %>
+	<li><%= tag %></li>
+<% end %>
+</lu>
+
 
 <%= link_to 'Back', root_path %>
