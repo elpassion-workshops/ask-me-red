@@ -2,10 +2,9 @@
 <p><%= @question.content %></p>
 <p>Tagi:</p>
 <lu>
-<% @question.tag_list.split(',').each do |tag| %>
+<% @question.tag_list.split(',').uniq.each do |tag| %>
 	<li><%= tag %></li>
 <% end %>
 </lu>
-
 
 <%= link_to 'Back', root_path %>
