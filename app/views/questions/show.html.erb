@@ -7,5 +7,7 @@
 <% end %>
 </lu>
 
+<p><%= @question.created_at %></p>
+<p><%= "Asked by #{@question.user.email}" %></p>
 
 <%= link_to 'Back', root_path %>
