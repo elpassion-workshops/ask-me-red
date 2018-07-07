@@ -1,4 +1,6 @@
 <h2><%= @question.title %></h2>
 <p><%= @question.content %></p>
+<p><%= @question.created_at %></p>
+<p><%= "Asked by #{@question.user.email}" %></p>
 
 <%= link_to 'Back', root_path %>
