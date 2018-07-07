@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   resources :users, only: [:show]
   root to: 'home#index'
   resources :home, only: :index
-  resources :questions, only: :index
+  resources :questions
 end
